@@ -28,6 +28,13 @@
       href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Sans+Lao:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <script>
+      // GitHub Pages publishes this branch as static files. The app build lives in app/.
+      if (location.hostname === 'phetsamoneken-spec.github.io' &&
+          (location.pathname === '/Invoice/' || location.pathname === '/Invoice')) {
+        location.replace('/Invoice/app/' + location.search + location.hash);
+      }
+    </script>
   </head>
   <body class="bg-[#F7FAF8] text-[#17241C] antialiased">
     <div id="root"></div>
