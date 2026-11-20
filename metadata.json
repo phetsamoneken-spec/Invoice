@@ -1,0 +1,6 @@
+{
+  "name": "Invoice PWA — ໃບຮັບເງິນ / FACTURE",
+  "description": "Mobile-first offline Original Invoice PWA with Lao/French bilingual invoices, IndexedDB storage, PDF/PNG export, A4 print, and WhatsApp sharing.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

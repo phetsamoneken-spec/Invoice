@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-primary: #008C35;
+    --color-secondary: #EAF8EE;
+    --color-background: #F7FAF8;
+    --color-surface: #FFFFFF;
+    --color-text: #17241C;
+    font-family: 'Noto Sans Lao', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    background-color: #F7FAF8;
+    color: #17241C;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .font-mono-num {
+    font-family: 'JetBrains Mono', 'Noto Sans Lao', monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+/* Dedicated A4 Print CSS completely independent of dashboard chrome */
+@page {
+  size: A4 portrait;
+  margin: 10mm;
+}
+
+@media print {
+  html,
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .no-print,
+  [data-no-print="true"] {
+    display: none !important;
+  }
+
+  #print-invoice-root {
+    display: block !important;
+    position: static !important;
+    width: 100% !important;
+    max-width: 190mm !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+
+  .paper-invoice-sheet {
+    width: 100% !important;
+    max-width: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    margin: 0 !important;
+    padding: 4mm !important;
+    page-break-inside: avoid;
+  }
+}

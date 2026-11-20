@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05A643" />
+      <stop offset="100%" stop-color="#007A2E" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+  <!-- Invoice Sheet -->
+  <path d="M148 106 C148 92 159 81 173 81 L302 81 L364 143 L364 385 C364 399 353 410 339 410 L173 410 C159 410 148 399 148 385 Z" fill="#FFFFFF" />
+  <path d="M302 81 L302 143 L364 143 Z" fill="#D4F0DC" />
+  <!-- Invoice Lines -->
+  <rect x="182" y="168" width="96" height="18" rx="9" fill="#008C35" opacity="0.22" />
+  <rect x="182" y="212" width="146" height="16" rx="8" fill="#17241C" opacity="0.16" />
+  <rect x="182" y="250" width="146" height="16" rx="8" fill="#17241C" opacity="0.16" />
+  <rect x="182" y="288" width="104" height="16" rx="8" fill="#17241C" opacity="0.16" />
+  <!-- Checkmark Badge -->
+  <circle cx="348" cy="368" r="70" fill="#008C35" stroke="#FFFFFF" stroke-width="14" />
+  <path d="M316 369 L339 392 L384 345" fill="none" stroke="#FFFFFF" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
